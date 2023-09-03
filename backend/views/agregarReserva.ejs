@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+    <form action="/agregarReserva" method="post">
+        <label for="fecha_hora_turno">fecha y hora del turno</label>
+        <input type="text" name="fecha_hora_turno" id="fecha_hora_turno" placeholder="2023-07-28 11:00:00">
+        <br>
+        <label for="nro_cancha">numero de cancha</label>
+        <input type="text" name="nro_cancha" id="nro_cancha">
+        <input type="hidden" name="id_usuario" id="id_usuario" value="<%=cookie.id_usuario %>">
+        <input type="hidden" name="fecha_hora_reserva" id="fecha_hora_reserva" value="<%=moment().format("YYYY-MM-DD HH:mm:ss"); %>">
+        <input type="submit" value="Guardar">
+    </form>
+
+
+</body>
+</html>

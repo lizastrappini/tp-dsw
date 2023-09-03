@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>MVC</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h2>Nuevo usuario</h2>
+            <div class="card">
+                <div class="card-header">Registro</div>
+                <div class="card-body">
+
+                    <form class="form-horizontal" method="post" action="/register">
+
+                        <div class="form-group">
+                            <label for="name" class="cols-sm-2 control-label">Nombre</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="name" class="cols-sm-2 control-label">Apellido</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Apellido" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="cols-sm-2 control-label">Dni</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                    <input type="number" class="form-control" name="dni" id="dni" placeholder="Dni" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="cols-sm-2 control-label">Telefono</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                    <input type="number" class="form-control" name="telefono" id="telefono" placeholder="Telefono" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="cols-sm-2 control-label">Email</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                    <input type="text" class="form-control" name="email" id="email" placeholder="Email" />
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="password" class="cols-sm-2 control-label">Contrseña</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                    <input type="password" class="form-control" name="password" id="password" placeholder="Password" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm" class="cols-sm-2 control-label">Confirmar contraseña</label>
+                            <div class="cols-sm-10">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                    <input type="password" class="form-control" name="confirm" id="confirm" placeholder="Confirmar Password" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group ">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block login-button">Registrarse</button>
+                        </div>
+                        <div class="login-register">
+                            <a href="/login">Login</a>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
